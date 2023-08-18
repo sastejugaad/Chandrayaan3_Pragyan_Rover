@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<title>Rover Stream</title>-->
+    <style>
+        /* Define a CSS class to rotate the image by 180 degrees */
+        .flip-horizontal {
+            transform: scaleY(-1); /* Flip horizontally */
+        }
+    </style>
+  </head>
+  <body>
+    <!--<h1>Raspberry Pi Video Stream</h1>-->
+    <img src="{{ url_for('video_feed') }}" class="flip-horizontal" width="320" height="240">
+  </body>
+</html>
